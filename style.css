@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    height:100%;
+    width:100%;
+    margin:0%;
+    border:none;
+    padding:0%;
+    color:white;
+}
+header{
+    height:100vh;
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.205),rgba(0, 0, 0, 0.76)), url(/media/temp_walp.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tem_container{
+    width:600px;
+    height:350px;
+    padding:25px;
+    background: linear-gradient(135 deg, rgba(255,255,255,0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-background-filter: blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+}
+.tem_head{
+    text-align: center;
+    padding:0 25px 20px 25px;
+}
+.tem_head h1{
+    color:rgb(255, 238, 6)
+}
+.input_container{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding:20px 0;
+}
+.tem_inp input{
+    width: 100px;
+    height: 20px;
+    padding:0 5px;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+}
+.tem_type select{
+    width:100px;
+    height: 20px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    text-align: center;
+}
+option{
+    background-color: rgb(0, 132, 255);
+    color:white;
+}
+option:hover{
+    background-color: white;
+}
+
+.result_container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    text-align: center;
+    height:auto;
+}
+
+.submit button{
+    width:150px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin:12px;
+    border:none;
+    outline: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+    background-color:rgba(255, 0, 0, 0.74);
+    color:white;
+    transition: all .5s ease-in-out;
+}   
+.submit button:hover{
+    background-color: rgb(255, 0, 0);
+    color: yellow;
+}
+
+.tem_result{
+    padding:20px;
+    width:400px;
+    height:auto;
+    border-bottom: 2x solid aqua;
+}
+.tem_result h2{
+    padding-top: 20px;
+    color:white;
+    display: block;
+    border-bottom:2px solid aquamarine;
+}
+
+.value{
+    width:200px;
+    padding:5px 50px;
+    background:transparent;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+@media (min-width: 350px) and (max-width: 500px){
+    
+    .tem_head{
+        padding:10px;
+    }
+    .tem_head h1{
+        font-size: 25px;
+    }
+    .tem_head p{
+        font-size: 12px;
+    }
+    .tem_container{
+        width:350px;
+        height:auto;
+        padding:10px;
+        background:none;
+    }
+    .input_container{
+        display:flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding:20px 10px;
+        
+    }
+    .tem_inp{
+        text-align: center;
+        justify-content: center;
+    }
+    .tem_type{
+        text-align: center;
+        justify-content: center;
+    }
+    .tem_type select{
+        width:100px;
+        height: 20px;
+        border-radius: 5px;
+        border:none;
+        outline: none;
+        text-align: center;
+         
+    }
+    #val{
+        font-size: 12px;
+        width:100px;
+        height:20px;
+    }
+    .tem_result{
+        padding:20px;
+        width:350px;
+        height:auto;
+        
+    }
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <form id="tempcal" onsubmit="TempCal(); return false">
+            <div class="tem_container">
+                <div class="tem_head">
+                    <h4>wellcome in</h4>
+                    <h1>Temperature Converter</h1>
+                    <p>convert any value into Celcius, Fahrenheit & kelvin</p>  
+                </div>
+                <div class="input_container">
+                    <div class="tem_inp">
+                        <label for="temp">Temperature Value :</label>
+                        <input type="number" placeholder="Enter here" name="temp"  id="temp">
+                    </div>
+                    <div class="tem_type">
+                        <label >Degree Type :</label>
+                        <select class="type" name="temp_diff" id="temp_diff">
+                            <option value="cel">°Celcius</option>
+                            <option value="fah">°Fahrenheit</option>
+                            <option value="kel">°Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+                 <div class="result_container">
+                    <div class="submit">
+                        <button type="submit" class="conv" id="btn">Convert <i class="fa-solid fa-temperature-high fa-fade fa-xl"></i></button>    
+                    </div>
+                    <div class="tem_result">
+                        <h2 id="resultcontainer"></h2>
+                    </div>
+                </div>
+            </div>
+        </form>                             
+    </header>
+                                                                                        
+    
+
+    <script src="tem.js"></script>
+</body>
+</html>
